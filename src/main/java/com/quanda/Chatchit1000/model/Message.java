@@ -29,8 +29,8 @@ public class Message implements Serializable {
 	@Column(name = "password",nullable = false)
 	private String password;
 	
-	@Column(name = "message",nullable = false)
-	private String message;
+	@Column(name = "messages",nullable = false)
+	private String messages;
 	
 	@Column(name = "status")
 	private int status;
@@ -67,12 +67,12 @@ public class Message implements Serializable {
 		this.password = password;
 	}
 
-	public String getMessage() {
-		return message;
+	public String getMessages() {
+		return messages;
 	}
 
 	public void setMessage(String message) {
-		this.message = message;
+		this.messages = message;
 	}
 
 	public int getStatus() {
