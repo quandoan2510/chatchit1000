@@ -45,7 +45,7 @@ public class MessageController {
 		
 		HttpHeaders header = new HttpHeaders();
 		
-		header.setLocation(builder.path("/messages/{id}").buildAndExpand(message.getId()).toUri());
+		header.setLocation(builder.path("/message/{id}").buildAndExpand(message.getId()).toUri());
 		
 		return new ResponseEntity<>(message,HttpStatus.CREATED);
 	}

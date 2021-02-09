@@ -35,8 +35,8 @@ public class Message implements Serializable {
 	@Column(name = "status")
 	private int status;
 	
-	@Column(name = "create_on",insertable = false)
-	private Date create_on;
+	@Column(name = "created_on",insertable = false)
+	private Date created_on;
 	
 	public Message() {
 		super();
@@ -83,12 +83,12 @@ public class Message implements Serializable {
 		this.status = status;
 	}
 
-	public Date getCreate_on() {
-		return create_on;
+	public Date getCreated_on() {
+		return getCreated_on();
 	}
 
-	public void setCreate_on(Date create_on) {
-		this.create_on = create_on;
+	public void setCreated_on(Date created_on) {
+		this.created_on = created_on;
 	}
 
 	/**
