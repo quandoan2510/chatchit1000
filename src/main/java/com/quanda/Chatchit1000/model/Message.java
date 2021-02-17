@@ -84,7 +84,7 @@ public class Message implements Serializable {
 	}
 
 	public Date getCreated_on() {
-		return getCreated_on();
+		return created_on;
 	}
 
 	public void setCreated_on(Date created_on) {
